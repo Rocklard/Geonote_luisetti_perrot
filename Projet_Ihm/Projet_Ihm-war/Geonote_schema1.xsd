@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://Geonote/" xmlns:tns="http://Geonote/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="EnregistrerNote" type="tns:EnregistrerNote"/>
+
+  <xs:element name="EnregistrerNoteResponse" type="tns:EnregistrerNoteResponse"/>
+
+  <xs:element name="EnregistrerParcours" type="tns:EnregistrerParcours"/>
+
+  <xs:element name="EnregistrerParcoursResponse" type="tns:EnregistrerParcoursResponse"/>
+
+  <xs:element name="ModifierNotes" type="tns:ModifierNotes"/>
+
+  <xs:element name="ModifierNotesResponse" type="tns:ModifierNotesResponse"/>
+
+  <xs:element name="ModifierParcours" type="tns:ModifierParcours"/>
+
+  <xs:element name="ModifierParcoursResponse" type="tns:ModifierParcoursResponse"/>
+
+  <xs:element name="MontrerNotes" type="tns:MontrerNotes"/>
+
+  <xs:element name="MontrerNotesResponse" type="tns:MontrerNotesResponse"/>
+
+  <xs:element name="MontrerParcours" type="tns:MontrerParcours"/>
+
+  <xs:element name="MontrerParcoursResponse" type="tns:MontrerParcoursResponse"/>
+
+  <xs:complexType name="MontrerNotes">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="MontrerNotesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="EnregistrerParcours">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" minOccurs="0"/>
+      <xs:element name="numero" type="xs:int" minOccurs="0"/>
+      <xs:element name="titre" type="xs:string" minOccurs="0"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="liste_node" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="EnregistrerParcoursResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="ModifierNotes">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" minOccurs="0"/>
+      <xs:element name="nom" type="xs:string" minOccurs="0"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="position" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ModifierNotesResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="EnregistrerNote">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" minOccurs="0"/>
+      <xs:element name="nom" type="xs:string" minOccurs="0"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="position" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="EnregistrerNoteResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="ModifierParcours">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" minOccurs="0"/>
+      <xs:element name="numero" type="xs:int" minOccurs="0"/>
+      <xs:element name="titre" type="xs:string" minOccurs="0"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="liste_node" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ModifierParcoursResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="MontrerParcours">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="MontrerParcoursResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
